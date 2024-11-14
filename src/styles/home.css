@@ -1,0 +1,61 @@
+#home{
+    display: flex;
+    min-height: calc(100vh - 91px);
+    position: relative;
+}
+
+#left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#left .title{
+    font-size: 6rem;
+    color: #fff;
+}
+
+#left .title span{
+    color: #A3E635;
+}
+
+#left .description{
+    font-size: 1.2rem;
+}
+
+#left_buttons{
+    display: flex;
+    gap: 24px;
+}
+
+#left_buttons a{
+    text-decoration: none;
+    color: #A3E635;
+}
+
+#banner{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    margin-top: 5rem;
+    width: 70%;
+    z-index: 2;
+}
+
+#banner img{
+    height: 60%;
+    width: fit-content;
+}
+
+.shape{
+    background-color: #A3E635;
+    width: 50%;
+    height: 70%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
