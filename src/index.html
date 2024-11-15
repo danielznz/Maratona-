@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/cards.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
     <header>
         <nav id="navbar">
-            <i class="fa-solid fa-person-running">maratona+</i>
+            <img src="/src/images/maratona+.png" height="80px">
             <ul id="nav_list">
                 <li class="nav-item active">
                     <a href="#">Início</a>
@@ -59,18 +60,20 @@
             <div class="shape"></div>
             <div id="left">
                 <h1 class="title">
-                    Maratona<span>+</span>
+                   Bem vindo ao <span>Maratona</span><span class="mais">+</span>
                 </h1>
 
                 <p class="description">
-                    Encontre maratonas personalizadas para você!
+                    Baixe o APP e descubra maratonas personalizadas para o seu perfil!
                 </p>
 
                 <div id="left_buttons">
                     <a href="#" class="btn-default">
-                        Baixe o APP
+                        Baixe o APP<i class="fa-solid fa-circle-down" id="icon"> </i>
                     </a>
-        
+                    <a href="#" class="btn-default">
+                        Ler sobre o APP<i class="fa-solid fa-file" id="icon"></i>
+                    </a>
                 </div>
 
                 <div class="social-media-buttons">
@@ -96,6 +99,61 @@
 
         </section>
     </main>
+
+    <section id="menu">
+        <h2 class="section-title">Maratonas Recentes</h2>
+        <hr>
+        <div id="cards">
+            <div class="card">
+                <img src="/src/images/maratona.png" class="card-image" alt="" height="300px">
+
+                <h3 class="card-title">
+                    Maratona Primavera <br>12/11
+                </h3>
+
+                <span class="card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+            </div>
+
+            <div class="card">
+                <img src="/src/images/maratona.png" class="card-image" alt="" height="300px">
+
+                <h3 class="card-title">
+                    Maratona Primavera
+                </h3>
+
+                <span class="card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+            </div>
+
+            <div class="card">
+                <img src="/src/images/maratona.png" class="card-image" alt="" height="300px">
+
+                <h3 class="card-title">
+                    Maratona Primavera
+                </h3>
+
+                <span class="card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+            </div>
+
+            <div class="card">
+                <img src="/src/images/maratona.png" class="card-image" alt="" height="300px">
+
+                <h3 class="card-title">
+                    Maratona Primavera
+                </h3>
+
+                <span class="card-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </span>
+            </div>
+            </div>
+        </div>
+    </section>
     <script src="/src/javascript/script.js"></script>
 </body>
 </html>
