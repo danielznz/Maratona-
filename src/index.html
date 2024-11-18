@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/cards.css">
     <link rel="stylesheet" href="styles/features.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
@@ -59,7 +60,7 @@
     <main id="content">
         <section id="home">
             <div class="shape"></div>
-            <div id="left">
+            <div id="left" class="reveal">
                 <h1 class="title">
                    Bem vindo ao <span>Maratona</span><span class="mais">+</span>
                 </h1>
@@ -146,42 +147,65 @@
         </div>
     </section>
 
-    <section class="app-features">
+    <<section class="app-features">
         <div class="feature">
-          <div class="feature-image">
-            <img src="images/empresa.png" alt="Empresas podem cadastrar maratonas">
-          </div>
-          <div class="feature-text">
-            <h3 class="section-title">Cadastre Maratonas</h3>
-            <p>No MARATONA+ as empresas podem se cadastrar e cadastrar suas maratonas de forma simples e rápida.</p>
-            <button class="btn-default-feature">Saiba Mais</button>
-          </div>
+            <div class="feature-image reveal">
+                <img src="images/empresa.png" alt="Empresas podem cadastrar maratonas">
+            </div>
+            <div class="feature-text reveal">
+                <h3 class="section-title">Cadastre Maratonas</h3>
+                <p>No MARATONA+ as empresas podem se cadastrar e cadastrar suas maratonas de forma simples e rápida.</p>
+                <button class="btn-default-feature">Saiba Mais</button>
+            </div>
         </div>
         <div class="feature-r">
-            <div class="feature-text">
+            <div class="feature-text reveal">
                 <h3 class="section-title">Escaneie QR Codes</h3>
-                <p>Usuários podem escanear QR codes para participar das maratonas cadastradas.Participe de Maratonas e se inscreva no aplicativo.</p>
+                <p>Usuários podem escanear QR codes para participar das maratonas cadastradas. Participe de Maratonas e se inscreva no aplicativo.</p>
                 <button class="btn-default-feature">Saiba Mais</button>
-              </div>
-            <div class="feature-image">
-            <img src="images/qrcode.png" alt="Usuários escaneando QR codes">
+            </div>
+            <div class="feature-image reveal">
+                <img src="images/qrcode.png" alt="Usuários escaneando QR codes">
             </div>
         </div>
         <div class="feature">
-          <div class="feature-image">
-            <img src="images/corredor.png" alt="Marcando quilometragem">
-          </div>
-          <div class="feature-text">
-            <h3 class="section-title">Marcação de Passos</h3>
-            <p>O aplicativo registra automaticamente a quilometragem percorrida pelos usuários e também conta a quantidade de passos dados em um percurso.</p>
-            <button class="btn-default-feature">Saiba Mais</button>
-          </div>
+            <div class="feature-image reveal">
+                <img src="images/corredor.png" alt="Marcando quilometragem">
+            </div>
+            <div class="feature-text reveal">
+                <h3 class="section-title">Marcação de Passos</h3>
+                <p>O aplicativo registra automaticamente a quilometragem percorrida pelos usuários e também conta a quantidade de passos dados em um percurso.</p>
+                <button class="btn-default-feature">Saiba Mais</button>
+            </div>
         </div>
-      </section>
-      </body>
+    </section>
+    
+      <footer>
+        <div id="footer_items">
+            <span id="copyright">
+                <a href="#" class="link-team">&copy 2024 Equipe Galão</a>
+            </span>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+      
+    </body>
       </html>
       
-      
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="/src/javascript/script.js"></script>
 </body>
 </html>

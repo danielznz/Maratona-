@@ -75,6 +75,8 @@
     transition: background-color .3s;
   }
 
+
+
   @media (max-width: 1170px) {
     .app-features  {
     flex-direction: column;
