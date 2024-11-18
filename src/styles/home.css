@@ -2,6 +2,7 @@
     display: flex;
     height:  900px;
     position: relative;
+    margin-top: 10rem;
 }
 
 #left{
@@ -23,7 +24,7 @@
 #left .title span {
     font-size: 5.5rem;
     text-transform: uppercase;
-    animation: colorAnimation 5s ease-in-out infinite;
+    animation: colorAnimation 15s ease-in-out infinite;
 }
 
 @keyframes colorAnimation {
@@ -31,7 +32,7 @@
         color: #A3E635;
     }
     25% {
-        color: #9CDD33;
+        color: #497700;
     }
     50% {
         color: #84BB2B;

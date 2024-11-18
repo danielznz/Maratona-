@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maratona+</title>
+    <link rel="icon" href="/src/images/maratona+.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/header.css">
@@ -19,13 +20,13 @@
             <img src="/src/images/maratona+.png" height="80px">
             <ul id="nav_list">
                 <li class="nav-item active">
-                    <a href="#">Início</a>
+                    <a href="#home">Início</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Corridas</a>
+                    <a href="#menu">Corridas</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#">Avaliações</a>
+                    <a href="#features">Recursos</a>
                 </li>
             </ul>
 
@@ -39,17 +40,17 @@
         </nav>
             
             <div id="mobile_menu">
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
-                    <a href="#">Início</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Corridas</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#">Avaliações</a>
-                </li>
-            </ul>
+                <ul id="mobile_nav_list">
+                    <li class="nav-item active">
+                        <a href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu">Corridas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features">Recursos</a>
+                    </li>
+                </ul>
             <button class="btn-default">
                 Baixe o APP
             </button>
@@ -99,9 +100,8 @@
             </div>
         </section>
     </main>
-
     <section id="menu">
-        <h2 class="section-title">Maratonas Recentes</h2>
+        <h2 class="section-title">Próximas Corridas</h2>
         <hr>
         <div id="cards">
             <div class="card">
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <<section class="app-features">
+    <section id="features" class="app-features">
         <div class="feature">
             <div class="feature-image reveal">
                 <img src="images/empresa.png" alt="Empresas podem cadastrar maratonas">

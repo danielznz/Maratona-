@@ -4,34 +4,42 @@ $(document).ready(function() {
         $('#mobile_btn').find('i').toggleClass('fa-x');
     });
 
-    const sections = $('section');
-    const navItems = $('.nav-item');
-
-    $(window).on('scroll', function () {
+    $(document).ready(function () {
+        const navItems = $('.nav-item');
         const header = $('header');
-        const scrollPosition = $(window).scrollTop();
-
-        let activeSectionIndex = 0;
-
-        if (scrollPosition <= 0) {
-            header.css('box-shadow', 'none');
-        } else {
-            header.css('box-shadow', '5px 1px 5px rgba(0, 0, 0, 0.1');
-        }
-
-        sections.each(function(i) {
-            const section = $(this);
-            const sectionTop = section.offset().top - 96;
-            const sectionBottom = sectionTop+ section.outerHeight();
-
-            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
-                activeSectionIndex = i;
-                return false;
+    
+        // Clique suave no link
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+    
+            const target = $($(this).attr('href'));
+    
+            if (target.length) {
+                $('html, body').animate(
+                    { scrollTop: target.offset().top - header.outerHeight() }, // Desconta a altura do header
+                    500
+                );
             }
-        })
-
-        navItems.removeClass('active');
-        $(navItems[activeSectionIndex]).addClass('active');
+        });
+    
+        // Alterar item ativo com base no scroll
+        $(window).on('scroll', function () {
+            const scrollPosition = $(window).scrollTop();
+    
+            $('section').each(function () {
+                const sectionTop = $(this).offset().top - header.outerHeight();
+                const sectionBottom = sectionTop + $(this).outerHeight();
+    
+                if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                    const id = $(this).attr('id');
+    
+                    navItems.removeClass('active');
+                    $(`a[href="#${id}"]`)
+                        .parent()
+                        .addClass('active');
+                }
+            });
+        });
     });
 
     ScrollReveal().reveal('#left', {
