@@ -70,6 +70,7 @@ $(document).ready(function() {
             reset: false, 
             delay: 300 
         });
-    });    
+    });  
+    
     
 });
