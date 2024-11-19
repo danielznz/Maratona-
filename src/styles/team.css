@@ -108,10 +108,13 @@ body {
   
   .member-role {
     font-size: 0.9rem;
-    color: #666;
+    color: rgb(102, 102, 102);
   }
 
   @media (max-width: 768px) {
+    #team{
+        margin-top: 2.5rem;
+    }
     .team-title {
       font-size: 1.8rem;
     }
