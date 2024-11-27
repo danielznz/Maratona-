@@ -32,7 +32,7 @@
         color: #A3E635;
     }
     25% {
-        color: #497700;
+        color: #9CDD33;
     }
     50% {
         color: #84BB2B;
@@ -89,8 +89,6 @@
     right: 0;
     z-index: 1;
 }
-
-
 
 @media screen and (max-width: 1170px){
     #home{
